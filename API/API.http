@@ -1,0 +1,36 @@
+﻿@baseUrl = https://localhost:7232
+
+
+@todoId = f22a2d0f-229c-4426-b450-60c600ba10c5
+### Get Todos
+GET {{baseUrl}}/api/todos
+
+### Get Todo By Id
+
+GET {{baseUrl}}/api/todos/{{todoId}}
+
+### create Todo
+
+POST {{baseUrl}}/api/todos
+Content-Type: application/json
+{
+  "title": "fix the Laptop"
+}
+
+### Update Todo
+
+PUT {{baseUrl}}/api/todos/{{todoId}}
+Content-Type: application/json
+{
+  "title": "fix the Laptop",
+  "completed": true
+}
+
+
+### Delete Todo
+
+DELETE {{baseUrl}}/api/todos/{{todoId}}
+
+
+
+###
